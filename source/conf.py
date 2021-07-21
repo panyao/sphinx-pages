@@ -19,14 +19,14 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'Sphinx Page GitHub Action'
-copyright = u'2019, Sean Zheng'
-author = u'Sean Zheng'
+project = 'DuaLip'
+copyright = '2021, LinkedIn'
+author = 'LinkedIn'
 
 # The short X.Y version
-version = u''
+version = ''
 # The full version, including alpha/beta/rc tags
-release = u''
+release = '0.0.1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -40,7 +40,9 @@ release = u''
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.githubpages'
+    'sphinx.ext.autosectionlabel',
+    'sphinx.ext.mathjax',
+    'sphinx.ext.githubpages',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -60,7 +62,7 @@ master_doc = 'index'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'scala'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -76,7 +78,7 @@ pygments_style = None
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "sphinx_rtd_theme"
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -88,9 +90,6 @@ html_theme = "sphinx_rtd_theme"
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-
-html_copy_source = False
-html_show_sourcelink = False
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -106,7 +105,7 @@ html_show_sourcelink = False
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'SphinxGitHubActionTestdoc'
+htmlhelp_basename = 'DuaLipdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -133,8 +132,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'SphinxGitHubActionTest.tex', u'Sphinx GitHub Action Test Documentation',
-     u'Sean Zheng', 'manual'),
+    (master_doc, 'DuaLip.tex', 'DuaLip Documentation',
+     'Yao Pan', 'manual'),
 ]
 
 
@@ -143,7 +142,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'sphinxgithubactiontest', u'Sphinx GitHub Action Test Documentation',
+    (master_doc, 'dualip', 'DuaLip Documentation',
      [author], 1)
 ]
 
@@ -154,8 +153,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'SphinxGitHubActionTest', u'Sphinx GitHub Action Test Documentation',
-     author, 'SphinxGitHubActionTest', 'One line description of project.',
+    (master_doc, 'DuaLip', 'DuaLip Documentation',
+     author, 'DuaLip', 'One line description of project.',
      'Miscellaneous'),
 ]
 
